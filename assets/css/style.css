@@ -1,0 +1,131 @@
+     body {
+         font-family: 'Yantramanav', sans-serif;
+
+         background-color: rgb(29, 29, 29);
+     }
+
+     h1 {
+         color: antiquewhite;
+     }
+
+     .envelop {
+         position: relative;
+     }
+
+     .img {
+
+         filter: grayscale(30%);
+         width: 100%;
+         background-image: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.4) 36%);
+
+     }
+
+     .container {
+         background-color: rgb(29, 29, 29);
+         text-align: center;
+         max-width: 100%;
+         margin: auto;
+         padding: 1rem;
+     }
+
+     /* Couleur de fond de la scroll bar */
+     ::-webkit-scrollbar {
+         background-color: rgb(29, 29, 29);
+     }
+
+     /* Couleur de la thumb de la scroll bar */
+     ::-webkit-scrollbar-thumb {
+         background-color: #333;
+     }
+
+     /* Couleur de la thumb au survol */
+     ::-webkit-scrollbar-thumb:hover {
+         background-color: #3f3f3f;
+     }
+
+     /* Couleur de la thumb lorsqu'elle est active */
+     ::-webkit-scrollbar-thumb:active {
+         background-color: #777;
+     }
+
+     /* Arrondir les coins de la thumb */
+     ::-webkit-scrollbar-thumb {
+         border-radius: 10px;
+     }
+
+     .test1 {
+
+         display: flex;
+         justify-content: center;         
+         margin-bottom: 2rem;
+         padding: 1rem;
+         position: absolute;
+         top: 35%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 90%;
+
+
+     }
+
+     .test2 {
+
+        display: flex;
+        justify-content: center;         
+        margin-bottom: 2rem;
+        padding: 1rem;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;    
+
+
+
+     }
+
+     .test3 {
+
+        display: flex;
+        justify-content: center;         
+        margin-bottom: 2rem;
+        padding: 1rem;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+
+    }
+
+    .test4 {
+
+       display: flex;
+       justify-content: center;         
+       margin-bottom: 2rem;
+       padding: 1rem;
+       position: absolute;
+       top: 65%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 90%;    
+
+
+
+    }
+
+     .button {
+         background-color: rgba(20, 20, 20, 0.3);
+         /* box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.3);           */
+         color: white;
+         font-size: 2rem;
+         border-radius: 2px;
+         border: thick double #ebae77;
+         padding: 0.3rem;
+     }
+
+     a {
+         text-decoration: none;
+
+     }

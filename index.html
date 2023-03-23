@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <title>Document</title>
+</head>
+<body>
+     <div class="container">
+          <div class="envelop">
+               <h1>LES TUILERIES</h1>
+               <!-- <img class="img" src="assets/img/2021-09-24-PRO-TUILERIE-0007_1500.jpg" alt=""> -->
+               <video class="img" loop muted autoPlay src="assets/img/video2.mp4"></video>
+               <div class="test1">
+                    <a class="button" href="" id="test1-link">Nos Evénements</a>
+                    
+               </div>
+          
+          <div class="test2">
+               <a class="button"  href="" id="test3-link">Carte cadeau</a>
+               
+          </div>
+          <div class="test3">
+               <a class="button"  href="" id="test2-link">Consulter nos menus</a>
+               
+          </div>
+          <div class="test4">
+               <a class="button"  href="" id="test4-link">Contactez-nous !</a>
+               
+          </div>
+          </div>
+     </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+      <script>
+
+          //  // ---------------------1-------------------------
+          //  // ----------------------------------------------
+          // Récupération de l'élément à animer
+          var test1Link = document.getElementById('test1-link');
+          var test1Animation = anime({
+               targets: test1Link, // l'élément à animer
+               translateY: [-1500, 0], // déplacement de -1000px à 0px en X   
+               duration: 1000,
+               
+               easing: 'easeInOutExpo'   
+          });     
+             // Définition du délai avant de repartir
+          setTimeout(function() {
+          anime({
+               targets: test1Link,
+               translateX: [0, 450], // déplacement de 0px à -1000px en X
+               duration: 1200, // durée de l'animation
+               easing: 'easeInOutExpo'
+          //    delay: 6000 // délai de 500ms avant le début de l'animation de retour
+          });
+          }, 2300); // Délai de 3 secondes avant le début de l'animation de retour
+
+          //  // -----------------------3----------------------
+          //  // ----------------------------------------------
+
+          var test3Link = document.getElementById('test3-link');     
+          var test3Animation = anime({
+               targets: test3Link, // l'élément à animer
+               translateX: [-1500, 0], // déplacement de -1000px à 0px en X   
+               duration: 1800,
+               delay:100,
+               easing: 'easeInOutExpo'
+          });
+          setTimeout(function() {
+          // Animation de retour 
+          anime({
+               targets: test3Link,
+               translateX: [0, 450], // déplacement de 0px à -1000px en X
+               duration: 1200, // durée de l'animation
+               easing: 'easeInOutExpo'
+          //    delay: 7000 // délai de 500ms avant le début de l'animation de retour
+          });
+          }, 2500); // Délai de 3 secondes avant le début de l'animation de retour
+
+            // -----------------------2-----------------------
+            // ----------------------------------------------
+          // Récupération de l'élément à animer
+          var test2Link = document.getElementById('test2-link');
+          var test2Animation = anime({
+                targets: test2Link, // l'élément à animer
+                translateY: [-1500, 0], // déplacement de -1000px à 0px en X   
+               duration: 1000,
+               delay:3200,  
+               easing: 'easeInOutExpo'   
+          });
+          setTimeout(function() {
+          // Animation de retour 
+          anime({
+               targets: test2Link,
+               translateX: [0, -450], // déplacement de 0px à -1000px en X
+               duration: 1200, // durée de l'animation
+               easing: 'easeInOutExpo'
+          //    delay: 7000 // délai de 500ms avant le début de l'animation de retour
+          });
+          }, 5500); // Délai de 3 secondes avant le début de l'animation de retour     
+          
+          setTimeout(function() {
+          // Animation de retour 
+          anime({
+               targets: test2Link,
+               translateX: [-450, -1500], // déplacement de 0px à -1000px en X
+               duration: 1200, // durée de l'animation
+               easing: 'easeInOutExpo'
+          //    delay: 7000 // délai de 500ms avant le début de l'animation de retour
+          });
+          }, 8500);
+
+          // //  // -----------------------4-----------------------
+          // //  // ----------------------------------------------
+
+          var test4Link = document.getElementById('test4-link');     
+          var test4Animation = anime({
+               targets: test4Link, // l'élément à animer
+               translateX: [-1500, 0], // déplacement de -1000px à 0px en X   
+               duration: 1800,
+               delay:3200,
+               easing: 'easeInOutExpo'
+          });
+          setTimeout(function() {
+          // Animation de retour 
+          anime({
+               targets: test4Link,
+               translateX: [0, -450], // déplacement de 0px à -1000px en X
+               duration: 1200, // durée de l'animation
+               easing: 'easeInOutExpo'
+          //    delay: 7000 // délai de 500ms avant le début de l'animation de retour
+          });
+          }, 5700); // Délai de 3 secondes avant le début de l'animation de retour    
+
+
+
+     </script>
+</html>
